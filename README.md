@@ -6,10 +6,10 @@
 - [II. Información general del entrenamiento](#ii-informaci%C3%B3n-general-del-entrenamiento)
 - [III. Curricula del entrenamiento](#iii-curricula-del-entrenamiento)
     - [:bookmark_tabs: Sesiones](#bookmark_tabs-sesiones)
-        - [Semana 1 - Git, Microservicios y Kafka](#semana-1---git-microservicios-y-kafka)
-        - [Semana 2 - Cloud y MongoDB](#semana-2---cloud-y-mongodb)
-        - [Semana 3 - Java, Spring Boot y JUnit](#semana-3---java-spring-boot-y-junit)
-        - [Semana 4 - Clean Code](#semana-4---clean-code)
+        - [Semana 1 - Cloud](#semana-1---cloud)
+        - [Semana 2 - Infraestructura](#semana-2---infraestructura)
+        - [Semana 3 - Spring Boot](#semana-3---spring-boot)
+        - [Semana 4 - Buen Código](#semana-4---good-code)
 - [IV. Grabaciones sesiones y Presentaciones 📺](#iv-grabaciones-sesiones-y-presentaciones-)
 - [V. Proyecto Final Capstone Project](#v-proyecto-final-capstone-project)
 - [VI. Agenda tu mentoria 📆](#vi-agenda-tu-mentoria-)
@@ -51,22 +51,26 @@ Los temas estan divididos en 4 semanas, 3 sesiones por semana.
 
 ## :bookmark_tabs: Sesiones
 
-### Semana 1 - Git, Microservicios y Kafka
-   1. [Git](Semana%201/Git/README.md) 
-   2. [Microservicios](Semana%201/Microservicios/README.md)
-   3. [Kafka](Semana%201/Kafka/README.md)
+### Semana 1 - Cloud
+   1. [Infraestructura como Codigo](Semana%201/IaC/README.md) 
+   2. [Serverless](Semana%201/Serverless/README.md)
+   3. [Mejores Prácticas](Semana%201/Practicas/README.md)
    
-### Semana 2 - Cloud y MongoDB
-   1. [Cloud](Semana%202/Cloud/README.md)
-   2. [MongoDB](Semana%202/MongoDB/README.md)
+### Semana 2 - Infraestructura
+   1. [Contenedores y Orquestación](Semana%202/Contenedores/README.md)
+   2. [Manejo de Mensajes](Semana%202/Mensajes/README.md)
+   3. [MySQL](Semana%202/MySQL/README.md)
+   4. [MongoDB](Semana%202/MongoDB/README.md)
+   5. [Monitoreo](Semana%202/Monitoreo/README.md)
+   6. [Seguridad](Semana%202/Seguridad/README.md)
 
-### Semana 3 - Java, Spring Boot y JUnit
+### Semana 3 - Spring Boot
    1. [Java](Semana%203/Java/README.md)
    2. [Spring Boot](Semana%203/Spring%20Boot/README.md)
    3. [JUnit](Semana%203/JUnit/README.md)
   
-### Semana 4 - Clean Code
-   1. [Clean Code](Semana%204/Clean%20Code/README.md)
+### Semana 4 - Good Code
+   1. [Good Code](Semana%204/Good%20Code/README.md)
    
 
 # IV. Grabaciones Sesiones y Presentaciones 📺
