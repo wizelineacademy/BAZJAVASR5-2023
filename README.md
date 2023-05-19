@@ -23,7 +23,7 @@ Bienvenido a tu capacitación de **Java Mid.**
 
 Importante unirse ya que toda la comunicación del curso se lleva por este medio.
 
-Calendario JAVA SR Bloque 5 <br> ![Screen Shot 2023-05-08 at 12 16 10](https://user-images.githubusercontent.com/114529977/236900049-f8b0f6e3-dff6-4457-976d-c1c5db8dd04f.png)
+Calendario JAVA SR Bloque 5 <br> ![Screen Shot 2023-05-08 at 12 16 10]
 
 
 # II. Información general del entrenamiento
