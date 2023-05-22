@@ -1,0 +1,12 @@
+version: "3"
+services:
+  app:
+    #Optional
+    image: k8s:latest
+    #Optional
+    container_name: k8s
+    build:
+      context: .
+      dockerfile: Dockerfile-Layered
+    ports:
+      - "8080:8080"

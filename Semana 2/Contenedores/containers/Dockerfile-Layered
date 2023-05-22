@@ -1,0 +1,20 @@
+#Step 1: Build the app using a Gradle image as base
+FROM gradle:jdk19 AS build
+COPY --chown=gradle:gradle . /home/gradle/src
+WORKDIR /home/gradle/src
+RUN gradle build --no-daemon
+
+#Step 2: Copy the built app to where it will execute and extract its layers
+FROM amazoncorretto:19-alpine AS builder
+EXPOSE 8080
+RUN mkdir /app
+COPY --from=build /home/gradle/src/build/libs/*.jar /app/spring-boot-application.jar
+RUN java -Djarmode=layertools -jar /app/spring-boot-application.jar extract
+
+#Step 3: Layering application to cache steps
+FROM amazoncorretto:19-alpine
+COPY --from=builder dependencies/ ./
+COPY --from=builder snapshot-dependencies/ ./
+COPY --from=builder spring-boot-loader/ ./
+COPY --from=builder application/ ./
+ENTRYPOINT ["java","org.springframework.boot.loader.JarLauncher"]

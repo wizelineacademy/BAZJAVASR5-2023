@@ -9,23 +9,24 @@ Es importante que antes del curso se estudie por cuenta propia los siguientes re
 * [Docker Compose](https://docs.docker.com/compose/)
 * [Minikube](https://minikube.sigs.k8s.io/docs/start/) (Versión local de un cluster de Kubernetes para probar la orquestación de los microservicios)
 
+
 # :computer:  Actividades
 
 ## Antes de empezar :exclamation:
-Para realizar esta actividad es importante tener Java 19 para poder trabajar con la última versión viable del SDK, en caso de tener que cambiar de versión se recomienda usar SDKMan. Se debe contar con Docker Desktop para poder probar los despliegues y Minikube para probar la orquestación de los microservicios en Kubernetes.
+Para realizar esta actividad es importante tener Java 19 para poder trabajar con la última versión viable del SDK, en caso de tener que cambiar de versión se recomienda usar SDKMan. Se debe contar con Docker Desktop para poder probar los despliegues, Minikube para probar la orquestación de los microservicios en Kubernetes. y una cuenta en Docker Hub para poder subir la imagen que tomará Kubernetes para hacer el despliegue.
 
 ## Primer Entregable: MVP usando Spring Boot basado en Java 19 con Gradle
 Debemos obtener una aplicación de Spring Boot de Spring Initializr como se muestra a continuación: 
 
 ![Initializr](img/Spring%20Initializr.png)
 
-Tomando esta aplicacion como base podemos simplemente agregar la siguiente anotacion en la clase principal para que funcione con Spring Web MVC:
+Tomando esta aplicacion como base podemos simplemente agregar la siguiente anotación en la clase principal para que funcione con Spring Web MVC:
 
 ``` java
 @EnableWebMvc
 ```
 
-Y despues crear un controlador que contenga esto:
+Y después crear un controlador que contenga esto:
 
 ```java
 import org.springframework.http.HttpStatusCode;
@@ -51,7 +52,7 @@ public class K8sController {
 Con eso y debido a que Spring Initializr hace la configuracion de Gradle por nosotros ya debemos de ser capaces de ejecutar el microservicio, acceder a la ruta http://localhost:8080/k8s/hello y obtener respuesta.
 
 ## Segundo Entregable: Microservicio desplegado en contenedor multi-etapa de Docker con un JAR en capas
-Ahora que tenemos el microservicio que queremos desplegar, debemos crear un Dockerfile que le permita construirse usando Gradle (de preferencia tomandolo de la imagen base) y copiando el resultado a una carpeta desde la cual levantar el microservicio. El Dockerfile debe lucir similar a esto:
+Ahora que tenemos el microservicio que queremos desplegar, debemos crear un Dockerfile que le permita construirse usando Gradle (de preferencia tomándolo de la imagen base) y copiando el resultado a una carpeta desde la cual levantar el microservicio. El Dockerfile debe lucir similar a esto:
 
 ```Dockerfile
 #Step 1: Build the app using a Gradle image as base
@@ -68,7 +69,7 @@ COPY --from=build /home/gradle/src/build/libs/*.jar /app/spring-boot-application
 ENTRYPOINT ["java","-jar", "spring-boot-application.jar"]
 ```
 
-De esta manera nos estamos asegurando de poder desplegarlo sin mayor complicacion. Sin embargo, la forma mas eficiente de desplegar una aplicacion escrita en Java siempre va a ser con su version por capas cuya generacion soporta Gradle por defecto y que podemos aprovechar para que Docker guarde en cache los contenidos de cada una. Esto nos va a permitir ahorrar tiempo al introducir cambios al contenedor y hace que el Dockerfile ahora luzca asi:
+De esta manera nos estamos asegurando de poder desplegarlo sin mayor complicación. Sin embargo, la forma más eficiente de desplegar una aplicacion escrita en Java siempre va a ser con su versión por capas cuya generación soporta Gradle por defecto y que podemos aprovechar para que Docker guarde en caché los contenidos de cada una. Esto nos va a permitir ahorrar tiempo al introducir cambios al contenedor y hace que el Dockerfile ahora luzca así:
 
 ```Dockerfile
 #Step 1: Build the app using a Gradle image as base
@@ -93,10 +94,10 @@ COPY --from=builder application/ ./
 ENTRYPOINT ["java","org.springframework.boot.loader.JarLauncher"]
 ```
 
-Al haberlo separado por etapas (cada FROM es una etapa) podemos agrupar mejor la logica y permitirle a Docker guardar etapas completas en cache.
+Al haberlo separado por etapas (cada FROM es una etapa) podemos agrupar mejor la lógica y permitirle a Docker guardar etapas completas en caché.
 
 ## Tercer Entregable: Archivo de Docker Compose para controlar el ciclo de vida del contenedor
-Para poder automatizar las actividades de construccion, despliegue y desmontado de un contenedor se recomienda usar Docker Compose. La intencion es manejar una version MVP de esta tecnologia que no complique en vano su configuracion y que nos permita ejecutar comandos facilmente. Una version muy simple de este archivo luce asi:
+Para poder automatizar las actividades de construcción, despliegue y desmontado de un contenedor se recomienda usar Docker Compose. La intención es manejar una versión MVP de esta tecnología que no complique en vano su configuración y que nos permita ejecutar comandos fácilmente. Una versión muy simple de este archivo luce así:
 
 ```yaml
 version: "3"
@@ -122,11 +123,125 @@ docker-compose down
 ```
 
 ## Cuarto Entregable: Archivo de despliegue en Minikube para instalar un despliegue en un pod de un cluster de Kubernetes
-Kubernetes se emplea para administrar mejor los contenedores que creamos con Docker. La idea es que a traves de hacer este despliegue nosotros podamos mantener sincronizados los microservicios que componen al cluster y agregar mas recursos o modificar su configuracion muy facilmente; un archivo normalmente deberia lucir asi:
+Kubernetes se emplea para administrar mejor los contenedores que creamos con Docker. La idea es que a traées de hacer este despliegue nosotros podamos mantener sincronizados los microservicios que componen al cluster y agregar mas recursos o modificar su configuracion muy fácilmente. Para poder subir nuestro contenedor a Docker Hub como una imagen debemos taggearla así:
+
+```bash
+docker tag k8s:latest username/imagename
+```
+
+La sintaxis del comando solicita que el primer parámetro sea el nombre de la imagen generada por Docker Compose y el segundo parámetro debe ser el repositorio del usuario ejecutando el comando (en este caso el nombre de usuario de la cuenta de Docker Hub creada) junto con el nombre de la imagen que queremos quede asignado ya arriba en Docker Hub.
+
+Una vez ejecutado el tag, debemos ejecutar la subida del contenedor a Docker Hub (lo cual crea la imagen que Kubernetes tomará a continuación):
+
+```bash
+docker push username/imagename
+```
+
+Una vez hecho ambos pasos debemos ver algo así en nuestra consola:
+
+![Docker Hub](img/Docker%20Hub.png)
+
+Y la imagen en nuestra cuenta de Docker Hub así:
+
+![Docker Image](img/Docker%20Image.png)
+
+Ya teniendo instalado Minikube debemos levantarlo con el comando:
+
+```bash
+minikube start
+```
+
+Y la ejecución de este comando debe terminar exitosamente así (debe estar Docker iniciado en la computadora para que pueda completar exitosamente su despliegue):
+
+![Minikube](img/Minikube.png)
+
+Teniendo nuestro ambiente de Kubernetes local corriendo y nuestra imagen disponible en Docker Hub ya lo único que queda es instalarla para poder trabajar con ella. Como Kubernetes usa archivos YAML para su configuración, vamos a necesitar crear un archivo que permita desplegar el pod y el servicio que van a hospedar a nuestra imagen de Docker.
+
+Afortunadamente, la utilería de línea de comandos de Kubernetes (kubectl) nos permite crear estos archivos usando comandos parametrizados por lo que debemos escribir algo así:
+
+```bash
+kubectl create deployment k8s --image=username/imagename --dry-run=client -o=yaml > deployment.yaml
+echo --- >> deployment.yaml
+kubectl create service clusterip k8s --tcp=8080:8080 --dry-run=client -o=yaml >> deployment.yaml
+```
+
+En la primer línea le estamos pidiendo que obtenga la imagen de Docker Hub y la nombre como "k8s" dentro del pod de Kubernetes que va a crear y que el formato de salida sea YAML. Después añadimos una línea de separación y luego de eso ponemos otra línea que nos permita definir el servicio que se va a encargar de manejar a dicho pod, indicando que haga el bypass del puerto 8080 (que sabemos es donde nuestro servicio está escuchando peticiones activamente) y que la salida también la genere como YAML. Si revisamos el contenido del archivo debe lucir algo así:
 
 ```yaml
-WIP
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: k8s
+  name: k8s
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: k8s
+    spec:
+      containers:
+      - image: wizelinegerardoruiz/k8s
+        name: k8s
+        resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: k8s
+  name: k8s
+spec:
+  ports:
+  - name: 8080-8080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: k8s
+  type: ClusterIP
+status:
+  loadBalancer: {}
 ```
+
+Una vez con ese archivo generado podemos solicitar la creación de ambos recursos con este comando:
+
+```bash
+kubectl apply -f deployment.yaml
+```
+
+Debe de confirmarnos que logró crearlos como se muestra a continuación:
+
+![Kubectl](img/Kubectl.png)
+
+Y después de unos segundos al consultar el estado de nuestra instancia local de Kubernetes debemos de ver que el pod está ejecutándose correctamente así:
+
+![Kubernetes](img/Kubernetes.png)
+
+El úlimo paso es solicitar al servicio que creamos que genere un túnel SSH para hacer el último bypass del puerto 8080 de la instancia de Kubernetes a nuestra máquina local con este comando:
+
+```bash
+kubectl port-forward svc/k8s 8080:8080
+```
+
+Y debe responder así para considerar que quedó listo el despliegue:
+
+```bash
+Forwarding from 127.0.0.1:8080 -> 8080
+Forwarding from [::1]:8080 -> 8080
+Handling connection for 8080
+```
+
+De ser así, lo último que debemos hacer es probar una vez más que nuestro servicio responda en la URL inicial (http://localhost:8080/k8s/hello) para confirmar que todo quedó bien implementado.
 
 # :books: Para aprender mas
 * [Spring Boot con Gradle](https://luiscualquiera.medium.com/spring-boot-gradle-docker-c310f2a12ab0)

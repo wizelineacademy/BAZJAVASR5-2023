@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: k8s
+  name: k8s
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: k8s
+    spec:
+      containers:
+      - image: wizelinegerardoruiz/k8s
+        name: k8s
+        resources: {}
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: k8s
+  name: k8s
+spec:
+  ports:
+  - name: 8080-8080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: k8s
+  type: ClusterIP
+status:
+  loadBalancer: {}
