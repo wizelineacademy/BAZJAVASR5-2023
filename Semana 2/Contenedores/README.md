@@ -160,7 +160,7 @@ Teniendo nuestro ambiente de Kubernetes local corriendo y nuestra imagen disponi
 Afortunadamente, la utilería de línea de comandos de Kubernetes (kubectl) nos permite crear estos archivos usando comandos parametrizados por lo que debemos escribir algo así:
 
 ```bash
-kubectl create deployment k8s --image=username/imagename --dry-run=client -o=yaml > deployment.yaml
+kubectl create deployment k8s --image=wizelinegerardoruiz/k8s --dry-run=client -o=yaml > deployment.yaml
 echo --- >> deployment.yaml
 kubectl create service clusterip k8s --tcp=8080:8080 --dry-run=client -o=yaml >> deployment.yaml
 ```
