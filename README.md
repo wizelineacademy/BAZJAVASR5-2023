@@ -97,8 +97,8 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/uUeQQwNbPfS
 
 | Mentor               | Mentee                          |  Liga para agendar mentoria                |
 |----------------------|---------------------------------|--------------------------------------------|
-| `David Sol Llaven`         | - OBED DE JESUS ZAMORA GONZALEZ | [Liga](z) |
-| `Orlando Rincón`         | - ALFONSO VASQUEZ CORTES| [Liga]() |
+| `Gerardo Ruiz`         | - OBED DE JESUS ZAMORA GONZALEZ | [Liga](z) |
+| ``         | - ALFONSO VASQUEZ CORTES| [Liga]() |
 | `Alain Pérez`         | - EDGAR ONOFRE ALVAREZ| [Liga]() |
 
 # VII. Contacto Wizeline DSA
