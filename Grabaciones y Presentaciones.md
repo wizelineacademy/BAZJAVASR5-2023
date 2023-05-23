@@ -2,9 +2,9 @@
 Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cada sesión.
 
 # Semana 1
-- [Lunes 22 Mayo - Cloud Parte 1]()
+- [Lunes 22 Mayo - Cloud Infrastructure as code](https://drive.google.com/file/d/1oIQZbq3nX0wkbU073wmmID9iHDffXeKz/view?usp=sharing)
 - 📺 [Grabación Lunes 22 Mayo]()
-- [Martes 23 Mayo - Cloud Parte 2]()
+- [Martes 23 Mayo - Cloud Serverless](https://drive.google.com/file/d/1bCkg0TOlv5ef_gt3LkTvfzZjuO9ngbyO/view?usp=sharing)
 - 📺 [Grabación Martes 23 Mayo ]()
 - [Miércoles 24 Mayo - Cloud Parte 3]()
 - 📺 [Grabación Miércoles 24 Mayo]()
