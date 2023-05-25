@@ -345,7 +345,8 @@ public class Message {
     }
 
     public void setMessage(String message) {
-        this.message = message + " on " + DateTimeFormatter.ofPattern("dd/MM/uuuu HH:mm:ss").format(LocalDateTime.now());
+        this.message = message + " on " + DateTimeFormatter.ofPattern("dd/MM/uuuu HH:mm:ss")
+        .format(LocalDateTime.now());
     }
 
     public String getFootNote() {

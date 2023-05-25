@@ -57,8 +57,7 @@ Los temas estan divididos en 4 semanas, 3 sesiones por semana.
    3. [Mejores Prácticas](Semana%201/Practicas/README.md)
    
 ### Semana 2 - Infraestructura
-   1. [Contenedores y Orquestación](Semana%202/Contenedores/README.md)
-   2. [Manejo de Mensajes](Semana%202/Mensajes/README.md)
+   1. [Contenedores, Orquestación y Colas Asíncronas](Semana%202/Contenedores/README.md)
    3. [MySQL](Semana%202/MySQL/README.md)
    4. [MongoDB](Semana%202/MongoDB/README.md)
    5. [Monitoreo](Semana%202/Monitoreo/README.md)
