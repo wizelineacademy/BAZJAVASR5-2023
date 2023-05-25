@@ -8,6 +8,7 @@ Es importante que antes del curso se estudie por cuenta propia los siguientes re
 * [Docker Desktop](https://docs.docker.com/engine/install/)
 * [Docker Compose](https://docs.docker.com/compose/)
 * [Minikube](https://minikube.sigs.k8s.io/docs/start/) (Versión local de un cluster de Kubernetes para probar la orquestación de los microservicios)
+* [Apache Kafka](https://kafka.apache.org/downloads)
 
 
 # :computer:  Actividades
@@ -243,6 +244,139 @@ Handling connection for 8080
 
 De ser así, lo último que debemos hacer es probar una vez más que nuestro servicio responda en la URL inicial (http://localhost:8080/k8s/hello) para confirmar que todo quedó bien implementado.
 
+## Quinto Entregable: Creación de un productor y un consumidor en Kafka para el consumo asíncrono de mensajes
+
+Al poder tener el microservicio desplegado en Kubernetes, la idea es poder comunicarlo con otros microservicios a través de un servicio de colas asíncronas. En este caso se realizará la configuración a través de Apache Kafka, un servicio que podemos configurar para trabajar en el ambiente en el que tengamos desplegado nuestro servicio por lo que empezaremos con su instalación y terminaremos con la configuración de las distintas partes que componen a su implementación.
+
+Al haber descargado Kafka de su página oficial (mencionada arriba) debemos dejarlo en una carpeta donde lo podamos tener a la mano. Una vez hecho eso debemos compilarlo para usarlo por primera vez con el comando que nos propone:
+
+![Kafka Install](img/Kafka%20Install.png)
+
+Una vez hecho debemos desplegar en una ventana de terminal Zookeper:
+
+```bash
+bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+
+Y en otra ventana de terminal (cuando termine la ejecución anterior) debemos iniciar el servidor de Kafka:
+
+```bash
+bin/kafka-server-start.sh config/server.properties
+```
+
+Cuando terminen ambas ventanas su ejecución tendremos listo nuestro ambiente en el puerto 9092. Ahora debemos configurar nuestro microservicio para poder consumir los mensajes después de producirlos, creando una clase KafkaConfiguration dentro de su respectivo paquete y configurando la dirección IP del servidor, cuales son las clases que procesará (en nuestro caso ambos son String) y creando una fábrica de configuración básica. Al final lo que queremos generar con esta configuración es un Bean que devuelva un Template que contenga dicha configuración:
+
+```java
+@Configuration
+public class KafkaConfiguration {
+
+    public ProducerFactory<String, String> producerFactory() {
+        Map<String, Object> config = new HashMap<>();
+        config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
+        config.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
+        return new DefaultKafkaProducerFactory<>(config);
+    }
+
+    @Bean
+    public KafkaTemplate<String, String> kafkaTemplate() {
+        return new KafkaTemplate<>(producerFactory());
+    }
+}
+```
+
+Después de esto creamos dos componentes de Spring, uno será el productor y el otro el consumidor:
+
+```java
+@Component
+public class KafkaProducer {
+
+    private final KafkaTemplate<String, String> kafkaTemplate;
+
+    public KafkaProducer(KafkaTemplate<String, String> kafkaTemplate) {
+        this.kafkaTemplate = kafkaTemplate;
+    }
+
+    public void sendMessage(String message) {
+        System.out.println("Producing message: " + message);
+        this.kafkaTemplate.send("messageTopic", message);
+    }
+}
+```
+
+```java
+@Component
+public class KafkaConsumer {
+
+    @KafkaListener(topics = "messageTopic" , groupId = "messageGroup")
+    public void consume(String message) {
+        System.out.println("Consuming message: " + message);
+    }
+}
+```
+
+Hay que observar que el productor utiliza el KafkaTemplate para enviar el mensaje y el consumidor utiliza la anotación KafkaListener para usar el tópico y el grupo para escuchar si cae un mensaje que coincida con ambos parámetros para obtener el mensaje y procesarlo. Por último, crearemos otro controlador que se encargue de obtener el mensaje del usuario y un objeto Java que devolveremos con un poco más de información para que el usuario sepa que su petición funcionó.
+
+```java
+public class Message {
+
+    public Message(String topic, String message, String footNote) {
+        setTopic(topic);
+        setMessage(message);
+        setFootNote(footNote);
+    }
+
+    private String topic;
+
+    private String message;
+
+    private String footNote;
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message + " on " + DateTimeFormatter.ofPattern("dd/MM/uuuu HH:mm:ss").format(LocalDateTime.now());
+    }
+
+    public String getFootNote() {
+        return footNote;
+    }
+
+    public void setFootNote(String footNote) {
+        this.footNote = footNote;
+    }
+}
+```
+
+```java
+@RestController
+@RequestMapping("/kafka")
+public class KafkaController {
+
+    @Autowired
+    private KafkaProducer kafkaProducer;
+
+    @PostMapping("/message")
+    public ResponseEntity<Message> message(@RequestParam String message) {
+        String responseMessage = "Consumed " + message;
+        kafkaProducer.sendMessage(message);
+        return new ResponseEntity<>(new Message("Kafka message", responseMessage, "Thanks!"),
+                HttpStatusCode.valueOf(200));
+    }
+}
+```
+Por último, lo recomendable sería crear dos versiones de este microservicio: Uno que se encargue sólo de producir mensajes y el otro que sólo se encargue de consumirlos para ver en funcionamiento esta tecnología.
+
 # :books: Para aprender mas
 * [Spring Boot con Gradle](https://luiscualquiera.medium.com/spring-boot-gradle-docker-c310f2a12ab0)
 * [Dockerizar una aplicacion de Spring Boot](https://www.baeldung.com/dockerizing-spring-boot-application)
@@ -253,3 +387,4 @@ De ser así, lo último que debemos hacer es probar una vez más que nuestro ser
 * [Habilitar rapidamente una aplicacion de Spring Boot para funcionar en Docker](https://www.docker.com/blog/kickstart-your-spring-boot-application-development/)
 * [Docker Compose con Spring Boot](https://www.bezkoder.com/docker-compose-spring-boot-mysql/)
 * [Spring Boot con Kubernetes](https://spring.io/guides/gs/spring-boot-kubernetes/)
+* [Configurar Spring Boot para usar Kafka](https://gustavopeiretti.com/configurar-kafka-en-spring-boot/)
