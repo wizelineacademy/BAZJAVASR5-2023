@@ -7,7 +7,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - [Martes 23 Mayo - Cloud: Serverless](https://drive.google.com/file/d/1bCkg0TOlv5ef_gt3LkTvfzZjuO9ngbyO/view?usp=sharing)
 - 📺 [Grabación Martes 23 Mayo ](https://drive.google.com/file/d/17Tt8RzgQ6Efzg6HmEggYWdROSL4tYEJU/view?usp=sharing)
 - [Miércoles 24 Mayo - Cloud: Mejores prácticas](https://drive.google.com/file/d/1Gaho9kXDPughaYh4-LkKGrMRi9-R7Hzy/view?usp=sharing)
-- 📺 [Grabación Miércoles 24 Mayo]()
+- 📺 [Grabación Miércoles 24 Mayo](https://drive.google.com/file/d/1qPluNCgK3n3dFtIV6TyubG9NTJQqvlml/view?usp=sharing)
 
 # Semana 2
 - [Lunes 29 Mayo - Infrastructure Parte 1]()
