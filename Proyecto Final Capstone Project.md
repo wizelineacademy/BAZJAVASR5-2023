@@ -50,29 +50,17 @@ Para poder considerar completada la semana 1 del entrenamiento debe contemplar l
 ### Requerimientos y Criterio de Evaluación 
 Para poder considerar completada la semana 2 del entrenamiento debe contemplar lo siguiente:
 
-| **Tópico**                                                                                  | **Puntaje** |
-|---------------------------------------------------------------------------------------------|-------------|
-| Generar por lo menos un módulo propio                                                       | 20          |
-| Uso de reflexión para examinar una clase propia                                             | 10          |
-| Creación de un componente Singleton                                                         | 10          |
-| Creación de un componente Prototype                                                         | 10          |
-| Creación de un componente Session                                                           | 10          |
-| Manipulación de un Bean usando ApplicationContext                                           | 20          |
-| Manipulación de un Bean usando BeanFactory                                                  | 20          |
-| Creación y configuración de TransactionManager                                              | 10          |
-| Uso de la anotación Transactional en un componente Service                                  | 10          |
-| Creación de un filtro HTTP                                                                  | 10          |
-| Creación de un Mono para procesar una operación                                             | 20          |
-| Creación de un Flux para procesar una operación                                             | 20          |
-| Integración con SonarCloud                                                                  | 30          |
-| Creación de un pipeline de Jenkins para ejecutar pruebas                                    | 20          |
-| Uso de por lo menos un patrón de diseño del primer bloque (Adapter, Bridge o Composite)     | 30          |
-| Uso de por lo menos un patrón de diseño del segundo bloque (Decorator, Facade o Flyweight)  | 30          |
-| Uso de por lo menos un patrón de diseño del tercer bloque (Gateway/Proxy, Sagas)            | 30          |
-| Uso de por lo menos un patrón de diseño de arquitectura (MVC, MVVM)                         | 15          |
-| Uso de por lo menos un patrón de diseño de microservicios (Service Template, Chassis)       | 15          |
-| **Total**                                                                                   | **350**     |
-| **Mínimo aprobatorio**                                                                      | **280**     |
+| **Tópico**                                                                                        | **Puntaje** |
+|---------------------------------------------------------------------------------------------------|-------------|
+| Creación de un microservicio usando Spring Initializr con Gradle y Java 19                        | 10          |
+| Creación de un Dockerfile para desplegar y arrancar un microservicio Java en capas                | 30          |
+| Creación de un archivo de Docker Compose para manejar el ciclo de vida del contenedor             | 10          |
+| Creación de un archivo de despliegue de Kubernetes que instale la imagen derivada del contenedor  | 20          |
+| Creación de un consumidor de Kafka                                                                | 20          |
+| Creación de un productor de Kafka                                                                 | 20          |
+| Configuración de la comunicación entre productor y consumidor de Kafka                            | 30          |
+| **Total**                                                                                         | **140**     |
+| **Mínimo aprobatorio**                                                                            | **112**     |
 
 ## Entregable 3
 
