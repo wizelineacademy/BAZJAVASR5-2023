@@ -2,10 +2,10 @@
 
 ### Topicos a evaluar
 
-* Patrones y Anti Patrones         10
-* Normalizacion y Desnormalizacion 20
-* Performance Configurations       20
-* MongoDB                          10
+* Patrones y Anti Patrones
+* Normalizacion y Desnormalizacion
+* Performance Configurations
+* MongoDB
  
 
 ### Practica
@@ -52,10 +52,13 @@ tabla2_normalizada | tabla2_campo1 | tabla2_campo2 | tabla2_campo3
 xxxxx | xxxxx | xxxxx | xxxxx 
 
 
-Captura de pantalla o texto donde se muestre la Query API que se diseñó. 
-Captura de pantalla o texto donde se respondan las preguntas planteadas en el punto 3
+Captura de pantalla o texto donde se muestre la Query API que se diseñó.
+
+Captura de pantalla o texto donde se respondan las preguntas planteadas en el punto 3.
+
 Captura de pantalla o texto donde se muestre el comando para crear índices, breve explicación de por que se selecciono ese índice y esas columnas.
-Captura de pantalla o texto donde se muestre un ejemplo de la tabla convertida a documento para un motor noSQL, por ejemplo
+
+Captura de pantalla o texto donde se muestre un ejemplo de la tabla convertida a documento para un motor NoSQL, por ejemplo:
 
 {
  "Llave1":"valor1",
