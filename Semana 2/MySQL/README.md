@@ -1,131 +1,66 @@
-# Kafka 101
-Recursos y pasos importantes para el curso
+# MySQL
 
-## Antes del curso
-Es importante que antes del curso se estudie por cuenta propia los siguientes recursos:
-* [Setup](https://kafka.apache.org/quickstart) (Para la instalación es importante ver la sección **Antes de empezar**)
-* [What is Kafka?](https://www.confluent.io/what-is-apache-kafka/) | [What is Apache Kafka?](https://www.geeksforgeeks.org/what-is-apache-kafka-and-how-does-it-work/?ref=rp)
-* [Topics, partitions and offsets](https://medium.com/event-driven-utopia/understanding-kafka-topic-partitions-ae40f80552e8) 
+### Topicos a evaluar
 
-# :computer:  Actividades
-
-## Antes de empezar :exclamation:
-Para realizar este curso es importante tener instalado los siguientes programas:
-
-- Java > 8
-- Kafka (https://kafka.apache.org/quickstart)
-- Tener un IDE instalado como [Visual Studio Code](https://code.visualstudio.com/download) o [IntelliJ](https://www.jetbrains.com/idea/download) 
-- Maven
-
-Para la instalación en Windows seguir el siguiente video:
-
-* https://youtu.be/aKDWWICgfA0 (en)
-* https://youtu.be/u5THXLlW0tU (es)
-
-
-## Kafka CLI (Command Line Interface) 101
-Una vez que Kafka fue descargado e instalado, procederemos a validar que este bien instalado para comenzar las pruebas
-
-### PASO 1: Iniciar ZooKeeper service y Kafka Server
-Abrimos una terminal y nos movemos al directorio donde se descargo Kafka 
-(ej. C:/Downloads/kafka_2.13-3.2.1)
-
-``` bash
-# Iniciamos Zookeeper (Zookeeper sera nuestra herramienta aunada a Kafka para mantener los logs/mensajes guardados)
-
-bin/zookeeper-server-start.sh config/zookeeper.properties 
-
-# para Windows  
-.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
-
-# si todo funciona bien, nos saldra un log parecido a 
-# INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper...)
-# En caso de falla, usualmente es porque el puerto 2181 esta ocupado y debemos cambiar el puerto editando el archivo de zookeeper.properties y modificando el puerto
-```
-
-Luego abrimos una segunda terminal, y nos movemos de nuevo al directorio de kafka
-```bash
-# Inicializamos el server de kafka con el comando
-bin/kafka-server-start.sh config/server.properties
-
-# para Windows
-.\bin\windows\kafka-server-start.bat .\config\server.properties
-# si se inicializa bien veremos el log 
-# INFO [KafkaServer id=0] started (kafka.server....)
-``` 
-
-### PASO 2: Crear un TOPIC para guardar los eventos
-Actualmente tenemos corriendo dos servicios, Zookeeper que trabaja de la mano de Kafka para guardar los logs (como si fuera nuestra Base de datos) y el server de Kafka
-
-Ahora en una tercera terminal hacemos lo siguiente
-```bash
-bin/kafka-topics.sh --create --topic <topic-name> --bootstrap-server localhost:<kafka-server-port>
-# el puerto base para el server de kafka suele ser el 9092
-
-# para Windows
-.\bin\windows\kafka-topics.bat --create --topic <topic-name> --bootstrap-server localhost:<kafka-server-port>
-# .\bin\windows\kafka-topics.bat --create --topic topic_demo --bootstrap-server localhost:9092
-```
-Al crear el TOPIC nos saldra un log similar a:
-`Created topic <topic-name>`
-
-Para validar que se creo el TOPIC podemos utilizar el comando `--describe` que nos indica como esta creado el topico o el comando `--list` que nos muestra la lista de topicos creados en Kafka
-```
-# describe
-bin/kafka-topics.sh --describe --topic <topic-name> --bootstrap-server localhost:<kafka-server-port>
-
-# list
-bin/kafka-topics.sh --list --bootstrap-server localhost:<kafka-server-port>
-```
-
-Para crear un TOPIC con particiones en especifico usar el comando
-```
-bin/kafka-topics.sh --create --topic <topic-name> --partitions <#_particiones> --bootstrap-server localhost:<kafka-server-port>
-```
-
-### PASO 3: Escribir eventos en el TOPIC
-
-```bash
-bin/kafka-console-producer.sh --topic <topic-name> --bootstrap-server localhost:<kafka-server-port> 
-> <type-data>
-> <type-data>
-> <type-data>
-
-# para Windows
-.\bin\windows\kafka-console-producer.bat --topic <topic-name> --bootstrap-server localhost:<kafka-server-port> 
-> <data>
-> <data>
-> <data>
-```
-(No cerrar la terminal de este paso)
-
-### PASO 4: Leer los eventos del TOPIC
-Abrimos una terminal nueva (sin cerrar la terminal del paso 3)
-```bash
-bin/kafka-console-consumer.sh --topic <topic-name> --bootstrap-server localhost:<kafka-server-port> 
-
-# para Windows
-.\bin\windows\kafka-console-consumer.bat --topic <topic-name> --bootstrap-server localhost:<kafka-server-port> 
-```
-
-Añadir la flag `--from-beginning` despues del nombre del topic
-```bash
-.\bin\windows\kafka-console-consumer.bat --topic <topic-name> --from-beginning --bootstrap-server localhost:<kafka-server-port> 
-```
-
-![Alt text](./img/kafka_zookeeper_diagram.png "Kafka & Zookeeper Diagram")
-
+* Patrones y Anti Patrones         10
+* Normalizacion y Desnormalizacion 20
+* Performance Configurations       20
+* MongoDB                          10
+ 
 
 ### Practica
-La practica y ejercicios las podemos encontrar en el directorio de practica
+
+Una empresa consultora en materia geográfica, necesita preparar su base de datos para recibir datos de parte del INEGI y posteriormente ser leídos.
+
+Con base en la tabla que se muestra, realiza las siguientes actividades.
+![My Image](table.png)
+* Imagen tomada de las bases de datos abiertas del INEGI
 
 
-# :books: Para aprender mas
-* Kafka: The Definite Guide, 2nd Edition | O'Reilly Media
-* https://kafka.apache.org/
-* https://developer.confluent.io/learn-kafka/
-* https://www.pluralsight.com/courses/apache-kafka-getting-started
-* [Aprendiendo Apache Kafka Pt 1](https://www.enmilocalfunciona.io/aprendiendo-apache-kafka-parte-1/)
-* [Aprendiendo Apache Kafka Pt 2](https://www.enmilocalfunciona.io/aprendiendo-apache-kafka-parte-2-2/)
-* [Aprendiendo Apache Kafka Pt 4 - Instalación](https://www.enmilocalfunciona.io/aprendiendo-apache-kafka-parte-4/)
-* [A gently introduction to Apache Kafka](http://www.gentlydownthe.stream)
+
+### PASO 1
+*  Normalización de la o las tablas resultantes.
+### PASO 2
+*  Diseño de una query API, siguiendo los mejores patrones de diseño. 
+    * Se necesitan 3 querys.
+    * La primera de ellas, necesita seleccionar todos los campos de la tabla principal
+    * La segunda necesita seleccionar, Estado, municipio y población activa.
+    * La tercera realizar algún join con cualquier otra tabla
+
+### PASO 3
+Se esperan grandes cantidades de querys ( lectura) hacia la tabla, especialmente consultas preguntando por los valores de Entidad Federativa, Municipio y Estimador. Actualmente la base de datos cuenta con la configuración mínima que proporciona el proveedor. 
+
+
+
+* Con base a eso, responde las siguientes actividades.
+* Como manejarias las grandes cantidades de querys de lecturas, ¿cambiarías alguna configuración?
+* ¿Que estrategia de indexado seguirias y por que?
+* ¿Que columnas serían las mejores para indexar y por que?
+
+### PASO 4
+Se busca realizar un prototipo de esa tabla utilizando un motor Nosql, como diseñarias el documento, utilizando la tabla utilizada en este ejercicio 
+
+### Entregables:
+Captura de pantalla con el diseño de las tablas y un breve ejemplo, con uno o dos valores por tabla es suficiente. Ejemplo
+
+tabla1_normalizada | tabla1_campo1 | tabla1_campo2 | tabla1_campo3 
+|--- |--- |--- |--- 
+xxxxx | xxxxx | xxxxx | xxxxx 
+
+tabla2_normalizada | tabla2_campo1 | tabla2_campo2 | tabla2_campo3 
+|--- |--- |--- |--- 
+xxxxx | xxxxx | xxxxx | xxxxx 
+
+
+Captura de pantalla o texto donde se muestre la Query API que se diseñó. 
+Captura de pantalla o texto donde se respondan las preguntas planteadas en el punto 3
+Captura de pantalla o texto donde se muestre el comando para crear índices, breve explicación de por que se selecciono ese índice y esas columnas.
+Captura de pantalla o texto donde se muestre un ejemplo de la tabla convertida a documento para un motor noSQL, por ejemplo
+
+{
+ "Llave1":"valor1",
+ "Llave2":"valor2",
+ "Llave3":"valor3",
+ "Llave4":"valor4",
+ "Llave5":"valor5"
+}
