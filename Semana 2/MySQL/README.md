@@ -30,9 +30,8 @@ Con base en la tabla que se muestra, realiza las siguientes actividades.
 ### PASO 3
 Se esperan grandes cantidades de querys ( lectura) hacia la tabla, especialmente consultas preguntando por los valores de Entidad Federativa, Municipio y Estimador. Actualmente la base de datos cuenta con la configuración mínima que proporciona el proveedor. 
 
+Con base a eso, responde las siguientes actividades:
 
-
-* Con base a eso, responde las siguientes actividades.
 * Como manejarias las grandes cantidades de querys de lecturas, ¿cambiarías alguna configuración?
 * ¿Que estrategia de indexado seguirias y por que?
 * ¿Que columnas serían las mejores para indexar y por que?
