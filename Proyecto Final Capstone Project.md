@@ -31,8 +31,8 @@ Para poder considerar completada la semana 1 del entrenamiento debe contemplar l
 
 | **Tópico**                                                                                                                          | **Puntaje** |
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| **Total**                                                                                                                           | **0**     |
-| **Mínimo Aprobatorio**                                                                                                              | **0**     |
+| **Total**                                                                                                                           | **0**       |
+| **Mínimo Aprobatorio**                                                                                                              | **0**       |
 
 
 ## Entregable 2
@@ -50,17 +50,21 @@ Para poder considerar completada la semana 1 del entrenamiento debe contemplar l
 ### Requerimientos y Criterio de Evaluación 
 Para poder considerar completada la semana 2 del entrenamiento debe contemplar lo siguiente:
 
-| **Tópico**                                                                                        | **Puntaje** |
-|---------------------------------------------------------------------------------------------------|-------------|
-| Creación de un microservicio usando Spring Initializr con Gradle y Java 19                        | 10          |
-| Creación de un Dockerfile para desplegar y arrancar un microservicio Java en capas                | 30          |
-| Creación de un archivo de Docker Compose para manejar el ciclo de vida del contenedor             | 10          |
-| Creación de un archivo de despliegue de Kubernetes que instale la imagen derivada del contenedor  | 20          |
-| Creación de un consumidor de Kafka                                                                | 20          |
-| Creación de un productor de Kafka                                                                 | 20          |
-| Configuración de la comunicación entre productor y consumidor de Kafka                            | 30          |
-| **Total**                                                                                         | **140**     |
-| **Mínimo aprobatorio**                                                                            | **112**     |
+| **Tópico**                                                                                                                           | **Puntaje** |
+|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Creación de un microservicio usando Spring Initializr con Gradle y Java 19                                                           | 10          |
+| Creación de un Dockerfile para desplegar y arrancar un microservicio Java en capas                                                   | 30          |
+| Creación de un archivo de Docker Compose para manejar el ciclo de vida del contenedor                                                | 10          |
+| Creación de un archivo de despliegue de Kubernetes que instale la imagen derivada del contenedor                                     | 20          |
+| Creación de un consumidor de Kafka                                                                                                   | 20          |
+| Creación de un productor de Kafka                                                                                                    | 20          |
+| Configuración de la comunicación entre productor y consumidor de Kafka                                                               | 30          |
+| Captura de pantalla o texto donde se muestre la Query API que se diseñó                                                              | 10          |
+| Captura de pantalla o texto donde se respondan las preguntas planteadas sobre performance                                            | 20          |
+| Captura de pantalla o texto donde se muestre el comando para crear índices y el por qué se selecciono ese índice y esas columnas     | 20          |
+| Captura de pantalla o texto donde se muestre un ejemplo de la tabla convertida a documento para un motor NoSQL                       | 10          |
+| **Total**                                                                                                                            | **200**     |
+| **Mínimo aprobatorio**                                                                                                               | **160**     |
 
 ## Entregable 3
 
@@ -73,31 +77,31 @@ Para poder considerar completada la semana 2 del entrenamiento debe contemplar l
 ### Requerimientos y Criterio de Evaluación 
 Para poder considerar completada la semana 3 del entrenamiento se debe entregar un microservicio que contemple lo siguiente:
 
-| **Tópico**                                                                                  | **Puntaje** |
-|---------------------------------------------------------------------------------------------|-------------|
-| Uso de por lo menos 1 Interfaz Funcional                                                    | 10          |
-| Uso de por lo menos 1 función Lambda y asignada a una Interfaz Funcional                    | 10          |
-| Uso de por lo menos 1 Stream de datos                                                       | 10          |
-| Uso de por lo menos 2 operaciones intermedias y 2 tipos de colectores en un Stream          | 10          |
-| Creación de un Mono para procesar una operación                                             | 20          |
-| Creación de un Flux para procesar una operación                                             | 20          |
-| Uso de Spring WebClient                                                                     | 10          |
-| Generar por lo menos un módulo propio                                                       | 10          |
-| Uso de la anotación Transactional en un componente Service                                  | 10          |
-| Uso de por lo menos una excepción de creación propia                                        | 10          |
-| Creación de un ExceptionHandler                                                             | 10          |
-| Creación de un ControllerAdvice                                                             | 20          |
-| Descripción de un método dentro del microservicio en Notación Big O                         | 20          |
-| Creación de un TransactionManager                                                           | 10          |
-| Prueba unitaria de cada endpoint de la API                                                  | 20          |
-| Prueba unitaria de cada operación CRUD                                                      | 20          |
-| Uso de Mockito en cada prueba                                                               | 10          |
-| Generación de logs por prueba                                                               | 10          |
-| Pruebas para Happy Path                                                                     | 10          |
-| Pruebas para cada Edge Case                                                                 | 20          |
-| Implementación de JaCoCo o SonarCloud (mínimo 70% de cobertura)                             | 30          |
-| **Total**                                                                                   | **300**     |
-| **Mínimo aprobatorio**                                                                      | **240**     |
+| **Tópico**                                                                                                                           | **Puntaje** |
+|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Uso de por lo menos 1 Interfaz Funcional                                                                                             | 10          |
+| Uso de por lo menos 1 función Lambda y asignada a una Interfaz Funcional                                                             | 10          |
+| Uso de por lo menos 1 Stream de datos                                                                                                | 10          |
+| Uso de por lo menos 2 operaciones intermedias y 2 tipos de colectores en un Stream                                                   | 10          |
+| Creación de un Mono para procesar una operación                                                                                      | 20          |
+| Creación de un Flux para procesar una operación                                                                                      | 20          |
+| Uso de Spring WebClient                                                                                                              | 10          |
+| Generar por lo menos un módulo propio                                                                                                | 10          |
+| Uso de la anotación Transactional en un componente Service                                                                           | 10          |
+| Uso de por lo menos una excepción de creación propia                                                                                 | 10          |
+| Creación de un ExceptionHandler                                                                                                      | 10          |
+| Creación de un ControllerAdvice                                                                                                      | 20          |
+| Descripción de un método dentro del microservicio en Notación Big O                                                                  | 20          |
+| Creación de un TransactionManager                                                                                                    | 10          |
+| Prueba unitaria de cada endpoint de la API                                                                                           | 20          |
+| Prueba unitaria de cada operación CRUD                                                                                               | 20          |
+| Uso de Mockito en cada prueba                                                                                                        | 10          |
+| Generación de logs por prueba                                                                                                        | 10          |
+| Pruebas para Happy Path                                                                                                              | 10          |
+| Pruebas para cada Edge Case                                                                                                          | 20          |
+| Implementación de JaCoCo o SonarCloud (mínimo 70% de cobertura)                                                                      | 30          |
+| **Total**                                                                                                                            | **300**     |
+| **Mínimo aprobatorio**                                                                                                               | **240**     |
 
 ## Entregable 4
 
@@ -109,5 +113,5 @@ Para poder considerar completada la semana 4 del entrenamiento debe contemplar l
 
 | **Tópico**                                                                                                                          | **Puntaje** |
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| **Total**                                                                                                                           | **0**     |
-| **Mínimo Aprobatorio**                                                                                                              | **0**     |
+| **Total**                                                                                                                           | **0**       |
+| **Mínimo Aprobatorio**                                                                                                              | **0**       |
