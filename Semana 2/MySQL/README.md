@@ -1,5 +1,12 @@
 # MySQL
 
+### Topicos a evaluar
+
+* Patrones y Anti Patrones         10
+* Normalizacion y Desnormalizacion 20
+* Performance Configurations       20
+* MongoDB                          10
+ 
 
 ### Practica
 
