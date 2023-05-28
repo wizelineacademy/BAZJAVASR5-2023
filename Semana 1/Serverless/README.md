@@ -9,6 +9,7 @@ Recursos de estudio de la sesión en vivo
 - [AWS Documentation](https://docs.aws.amazon.com)
 - [AWS Digital Training](https://aws.amazon.com/training/digital/?cta=tctopbanner)
 - [Uso de urls pre-firmadas para compartir archivos de S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
+- [CDK Patterns Serverless Practical Examples](https://github.com/cdk-patterns/serverless)
 ### Serverless 101
 - Libro - Learning Serverless By Jason Katzer, O'reilly
 - [Red Hat - ¿Qué es un PaaS](https://www.redhat.com/es/topics/cloud-computing/what-is-paas)
