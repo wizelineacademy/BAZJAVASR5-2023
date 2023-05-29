@@ -28,12 +28,7 @@ Se deberá enviar cada entrega en las fechas indicadas en la siguiente sección 
 
 ### Requerimientos y Criterio de Evaluación
 Para poder considerar completada la semana 1 del entrenamiento debe contemplar lo siguiente:
-- Crear una carpeto en Drive llama: Entregable 1 y registrar el link en: [Formulario](https://forms.gle/D8znXvX7e1Yc8iLk7)
-- Crear 3 subcarpetas con los nombres de:
-  a. Cloud: Infrastructure as a code
-  b. Cloud: Serverless
-  c. Cloud: Best Practices
-- Agregar la evidencia de los ejercicios por cada tema
+- Enviar evidencia de semana 1 para poder agregarla a carpeta de evidencias. 
 
 | **Tópico**                                                                                                                          | **Puntaje** |
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------|
