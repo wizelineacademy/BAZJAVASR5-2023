@@ -97,7 +97,7 @@ Recuerda llenar el [Formato de Retroalimentación](https://forms.gle/uUeQQwNbPfS
 | Mentor               | Mentee                          |  Liga para agendar mentoria                |
 |----------------------|---------------------------------|--------------------------------------------|
 | `Gerardo Ruiz`         | - OBED DE JESUS ZAMORA GONZALEZ  <br/> - ALFONSO VASQUEZ CORTES| [Liga](https://calendly.com/gerardoruiz-wizeline/mentoria-baz?month=2023-05) |
-| `Alain Pérez`         | - EDGAR ONOFRE ALVAREZ| [Liga]() |
+| `Alain Pérez`         | - EDGAR ONOFRE ALVAREZ| [Liga](https://calendly.com/alain-chevanier-jsc) |
 
 
 # VII. Contacto Wizeline DSA
