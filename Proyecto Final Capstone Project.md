@@ -86,6 +86,8 @@ Para poder considerar completada la semana 2 del entrenamiento debe contemplar l
 | **Total**                                                                                                                        | **250**     |
 | **Mínimo aprobatorio**                                                                                                           | **200**     |
 
+Los talleres se evaluarán durante la clase, y las evidencias de los mismos se almacenarán en la [siguiente carpeta de Google Drive](https://drive.google.com/drive/folders/12sY-EjG7vuNdV-Eqbs5BkHqQTkUo9hMx?usp=sharing).
+
 ## Entregable 3
 
 - **Temas relacionados**:
