@@ -81,10 +81,10 @@ Para poder considerar completada la semana 2 del entrenamiento debe contemplar l
 | Captura de pantalla o texto donde se respondan las preguntas planteadas sobre performance                                        | 20          |
 | Captura de pantalla o texto donde se muestre el comando para crear índices y el por qué se selecciono ese índice y esas columnas | 20          |
 | Captura de pantalla o texto donde se muestre un ejemplo de la tabla convertida a documento para un motor NoSQL                   | 10          |
-| Análisis de vulnerabilidades en un ambiente en la nube (AWS) usando ScoutSuite                   | 10          |
-| Analísis de vulnerabilidades de una aplicación web usando OWASP Zap                   | 10          |
-| **Total**                                                                                                                        | **220**     |
-| **Mínimo aprobatorio**                                                                                                           | **160**     |
+| Análisis de vulnerabilidades en un ambiente en la nube (AWS) usando ScoutSuite                                                   | 25          |
+| Analísis de vulnerabilidades de una aplicación web usando OWASP Zap                                                              | 25          |
+| **Total**                                                                                                                        | **250**     |
+| **Mínimo aprobatorio**                                                                                                           | **200**     |
 
 ## Entregable 3
 
