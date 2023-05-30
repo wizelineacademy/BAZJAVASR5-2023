@@ -11,7 +11,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 
 # Semana 2
 - [Lunes 29 Mayo - Infrastructure Parte 1](https://drive.google.com/file/d/1aQkbU7hTOjFRPYM5BWy9W2QMH_Yxvayf/view?usp=sharing)
-- 📺 [Grabación Lunes 29 Mayo]()
+- 📺 [Grabación Lunes 29 Mayo](https://drive.google.com/file/d/1FoSXqNKALU18zmS_2tnWvqEPHJuZSoE-/view?usp=sharing)
 - [Martes 30 Mayo - Infrastructure Parte 2](https://drive.google.com/file/d/1cY6bEarVZRYhV34ro-yCEMs7ti6wg7Hq/view?usp=sharing)
 - 📺 [Grabación Martes 30 Mayo ]()
 - [Miércoles 31 Mayo - Infrastructure Parte 3]()
