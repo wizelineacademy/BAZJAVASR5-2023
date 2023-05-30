@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        generate_statistics: false
+        show_sql: false
+  devtools:
+    add-properties: false
