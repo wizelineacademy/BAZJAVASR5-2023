@@ -58,10 +58,9 @@ Los temas estan divididos en 4 semanas, 3 sesiones por semana.
    
 ### Semana 2 - Infraestructura
    1. [Contenedores, Orquestación y Colas Asíncronas](Semana%202/Contenedores/README.md)
-   3. [MySQL](Semana%202/MySQL/README.md)
-   4. [MongoDB](Semana%202/MongoDB/README.md)
-   5. [Monitoreo](Semana%202/Monitoreo/README.md)
-   6. [Seguridad](Semana%202/Seguridad/README.md)
+   2. [MySQL](Semana%202/MySQL/README.md)
+   3. [Monitoreo](Semana%202/Monitoreo/README.md)
+   4. [Seguridad](Semana%202/Seguridad/README.md)
 
 ### Semana 3 - Spring Boot
    1. [Java](Semana%203/Java/README.md)
