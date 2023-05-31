@@ -112,17 +112,16 @@ Para poder considerar completada la semana 3 del entrenamiento se debe entregar 
 | Generar por lo menos un módulo propio                                              | 10          |
 | Uso de la anotación Transactional en un componente Service                         | 10          |
 | Uso de por lo menos una excepción de creación propia                               | 10          |
-| Creación de un ExceptionHandler                                                    | 10          |
+| Creación de un ExceptionHandler                                                    | 20          |
 | Creación de un ControllerAdvice                                                    | 20          |
 | Descripción de un método dentro del microservicio en Notación Big O                | 20          |
-| Creación de un TransactionManager                                                  | 10          |
 | Prueba unitaria de cada endpoint de la API                                         | 20          |
 | Prueba unitaria de cada operación CRUD                                             | 20          |
 | Uso de Mockito en cada prueba                                                      | 10          |
 | Generación de logs por prueba                                                      | 10          |
 | Pruebas para Happy Path                                                            | 10          |
 | Pruebas para cada Edge Case                                                        | 20          |
-| Implementación de JaCoCo o SonarCloud (mínimo 70% de cobertura)                    | 30          |
+| Implementación de JaCoCo (mínimo 70% de cobertura)                                 | 30          |
 | **Total**                                                                          | **300**     |
 | **Mínimo aprobatorio**                                                             | **240**     |
 
