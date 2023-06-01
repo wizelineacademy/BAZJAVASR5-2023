@@ -13,9 +13,9 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - [Lunes 29 Mayo - Infrastructure Parte 1](https://drive.google.com/file/d/1aQkbU7hTOjFRPYM5BWy9W2QMH_Yxvayf/view?usp=sharing)
 - 📺 [Grabación Lunes 29 Mayo](https://drive.google.com/file/d/1FoSXqNKALU18zmS_2tnWvqEPHJuZSoE-/view?usp=sharing)
 - [Martes 30 Mayo - Infrastructure Parte 2](https://drive.google.com/file/d/1cY6bEarVZRYhV34ro-yCEMs7ti6wg7Hq/view?usp=sharing)
-- 📺 [Grabación Martes 30 Mayo ]()
-- [Miércoles 31 Mayo - Infrastructure Parte 3]()
-- 📺 [Grabación Miércoles 31 Mayo]()
+- 📺 [Grabación Martes 30 Mayo ](https://drive.google.com/file/d/1n4c1DUHgYUJODWOsGjulFm2Y6ndeDX9J/view?usp=sharing)
+- [Miércoles 31 Mayo - Infrastructure Parte 3](https://drive.google.com/file/d/1-T4hO6CSjLDp0e8w5nBLeMIQ0r6V2ClG/view?usp=sharing)
+- 📺 [Grabación Miércoles 31 Mayo](https://drive.google.com/file/d/1oVdpyhBFGs3dEzpWAlFxVyH6di5UuV-e/view?usp=sharing)
 
 # Semana 3
 - [Lunes 5 Junio - Java con Spring Boot Parte 1]()
