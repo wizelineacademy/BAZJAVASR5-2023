@@ -62,9 +62,15 @@ Los temas estan divididos en 4 semanas, 3 sesiones por semana.
    3. [Seguridad](Semana%202/Seguridad/README.md)
 
 ### Semana 3 - Spring Boot
-   1. [Java](Semana%203/Java/README.md)
-   2. [Spring Boot](Semana%203/Spring%20Boot/README.md)
-   3. [JUnit](Semana%203/JUnit/README.md)
+   1. [Programación Funcional](Semana%203/ProgramacionFuncional)
+   2. [Programación Reactiva](Semana%203/ProgramacionReactiva)
+   3. [Módulos](Semana%203/Modulos)
+   4. [Reflexión](Semana%203/Reflexion)
+   5. [Manejo de Excepciones](Semana%203/Excepciones)
+   6. [Manejo de Transacciones](Semana%203/Transacciones)
+   7. [Pruebas Unitarias en Java ](Semana%203/PruebasUnitariasJava)
+   8. [Pruebas de Integración](Semana%203/PruebasIntegracion)
+   9. [Cobertura de pruebas](Semana%203/Cobertura)
   
 ### Semana 4 - Good Code
    1. [Good Code](Semana%204/Good%20Code/README.md)

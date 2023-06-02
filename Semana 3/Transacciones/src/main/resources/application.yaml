@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    defer-datasource-initialization: true
+
+logging:
+  level:
+    org:
+      springframework:
+        transaction: TRACE
+        orm: DEBUG
