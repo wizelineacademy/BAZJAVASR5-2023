@@ -18,11 +18,21 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Miércoles 31 Mayo](https://drive.google.com/file/d/1oVdpyhBFGs3dEzpWAlFxVyH6di5UuV-e/view?usp=sharing)
 
 # Semana 3
-- [Lunes 5 Junio - Java con Spring Boot Parte 1]()
+- [Programación Funcional](https://drive.google.com/file/d/1Q9jV2VaB4RWXk7Zb9qqHqet3B4nStptQ/view?usp=sharing)
+- [Programación Reactiva](https://drive.google.com/file/d/1XgQTX_rr6wurnS6mLTsoVLmQCS-XcX3R/view?usp=sharing)
+- [Recolector de Basura](https://drive.google.com/file/d/1dNWlNrNrDmXeWG0ax9B0ba2dUcPZRtJ6/view?usp=sharing)
+- [Módulos](https://drive.google.com/file/d/1LDuFfWw2LBijVh1ZV4g4SCKl8dCyiBxO/view?usp=sharing)
+- [Reflexión](https://drive.google.com/file/d/1_6kTrRjk_CI92lKt5EY-ap5sTKtcNzoH/view?usp=sharing)
+- [Manejo de Excepciones](https://drive.google.com/file/d/1kjSnuIm0d_CSqWTgGs255kwHhHOJEQtA/view?usp=sharing)
+- [Refactorización de Código](https://drive.google.com/file/d/1PZEjpKVtnT4QhQtT_O4liRKAn43dacwa/view?usp=sharing)
+- [Complejidad Computacional](https://drive.google.com/file/d/1TAEzhNZYYZN5dhVTaN1i_hcP1ashiuQt/view?usp=sharing)
+- [Deuda Técnica](https://drive.google.com/file/d/1TH7SsTifz15pfU-zMowBhyilxoKx58HP/view?usp=sharing)
+- [Transacciones](https://drive.google.com/file/d/1-6ePlQ-VDlu2FkuLEkt8ZhKGXRL3aXYg/view?usp=sharing)
+- [Pruebas con Java](https://drive.google.com/file/d/1mixldZGBuIel-ljcPdIn9nUDtQRmqx5t/view?usp=sharing)
+- [Pruebas con Springboot](https://drive.google.com/file/d/1vYV6lvxyQlBDaKWswPeAwuB3QsZmmaAe/view?usp=sharing)
+- [CObertura de Código](https://drive.google.com/file/d/1IKgTLiHav_eJlpb5HeSw1eLzVH-GbxOb/view?usp=sharing)
 - 📺 [Grabación Lunes 25 Junio]()
-- [Martes 6 Junio - Java con Spring Boot Parte 1]()
 - 📺 [Grabación Martes 6 Junio ]()
-- [Miércoles 7 Junio - Java con Spring Boot Parte 1]()
 - 📺 [Grabación Miércoles 7 Junio]()
 
 # Semana 4
