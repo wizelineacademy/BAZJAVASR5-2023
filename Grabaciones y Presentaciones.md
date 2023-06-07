@@ -30,7 +30,7 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - [Transacciones](https://drive.google.com/file/d/1-6ePlQ-VDlu2FkuLEkt8ZhKGXRL3aXYg/view?usp=sharing)
 - [Pruebas con Java](https://drive.google.com/file/d/1mixldZGBuIel-ljcPdIn9nUDtQRmqx5t/view?usp=sharing)
 - [Pruebas con Springboot](https://drive.google.com/file/d/1vYV6lvxyQlBDaKWswPeAwuB3QsZmmaAe/view?usp=sharing)
-- [CObertura de Código](https://drive.google.com/file/d/1IKgTLiHav_eJlpb5HeSw1eLzVH-GbxOb/view?usp=sharing)
+- [Cobertura de Código](https://drive.google.com/file/d/1IKgTLiHav_eJlpb5HeSw1eLzVH-GbxOb/view?usp=sharing)
 - 📺 [Grabación Lunes 5 Junio](https://drive.google.com/file/d/19ka_-aMsIR8xrZNYhxw1nQTCM2q1sKS-/view?usp=sharing)
 - 📺 [Grabación Martes 6 Junio ](https://drive.google.com/file/d/1CDxSE4M7USykZuNaFuzXUeH2BnhRaACU/view?usp=sharing)
 - 📺 [Grabación Miércoles 7 Junio]()
