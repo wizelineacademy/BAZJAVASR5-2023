@@ -128,14 +128,29 @@ Para poder considerar completada la semana 3 del entrenamiento se debe entregar 
 ## Entregable 4
 
 - **Temas relacionados**:
-  - Good Code
+  - Código Limpio
+  - Principios de Diseño SOLID
+  - Patrones de Diseño
+  - Arquitectura Hexagonal
+  - Arquitectura Orientada a Eventos
+  - Microservicios vs Monolito Modular
+  - TDD
+  - BDD
 
 ### Requerimientos y Criterio de Evaluación
 
 Para poder considerar completada la semana 4 del entrenamiento debe contemplar lo siguiente:
 
-| **Tópico**             | **Puntaje** |
-| ---------------------- | ----------- |
-| **Total**              | **0**       |
-| **Mínimo Aprobatorio** | **0**       |
+| **Tópico**                                                                         | **Puntaje** |
+| ---------------------------------------------------------------------------------- | ----------- |
+| Uso de nombres significativos en variables y funciones                             | 10          |
+| Uso de funciones/métodos limpios en clases                                         | 10          |
+| Uso correcto de los Principios de Diseño SOLID                                     | 20          |
+| Uso correcto de arquitectura hexagonal en un Proyecto de Spring Boot               | 20          |
+| Quizz Arquitectura Orientada a Eventos                                             | 10          |
+| Quizz Microservicios vs Monolito Modular                                           | 10          |
+| Uso de desarrollo Orientado a Pruebas                                              | 10          |
+| Uso de desarrollo Orientado a Comportamiento (Cucumber)                            | 10          |
+| **Total**                                                                          | **100**     |
+| **Mínimo aprobatorio**                                                             | **80**     |
 
