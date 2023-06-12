@@ -36,9 +36,8 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Miércoles 7 Junio](https://drive.google.com/file/d/1_Ye9g2cmC4enTSKj0Mpn9-YLPtwZkYQt/view?usp=sharing)
 
 # Semana 4
-- [Lunes 12 Junio -  Good Code Parte 1]()
+- [Lunes 12 Junio -  Good Code](https://drive.google.com/file/d/193gM86CZi3bZlB0sJQxfvyrh7zp8eqjJ/view?usp=sharing)
 - 📺 [Grabación Lunes 12 Junio]()
-- [Martes 13 Junio - Good Code Parte 2]()
+- [Martes 13 Junio - Good Code Parte 2](https://drive.google.com/file/d/1aTxp8Stjr_wc53pMjSKNNPkce3dpL4xM/view?usp=sharing)
 - 📺 [Grabación Martes 13 Junio ]()
-- [Miércoles 14 Junio - Good Code Parte 3]()
 - 📺 [Grabación Miércoles 14 Junio]()
