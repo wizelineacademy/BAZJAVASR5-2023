@@ -40,4 +40,4 @@ Aquí encontrarás todas las grabaciones y presentaciones una vez finalizada cad
 - 📺 [Grabación Lunes 12 Junio](https://drive.google.com/file/d/1ib4OrvL33eqwVZ4Hx_ixxBjfZZh15V4d/view?usp=sharing)
 - [Martes 13 Junio - Good Code Parte 2](https://drive.google.com/file/d/1aTxp8Stjr_wc53pMjSKNNPkce3dpL4xM/view?usp=sharing)
 - 📺 [Grabación Martes 13 Junio](https://drive.google.com/file/d/10aVtQjulTn25TOULuk1MN0t-Z7-kccyv/view?usp=sharing)
-- 📺 [Grabación Miércoles 14 Junio]()
+- 📺 [Grabación Miércoles 14 Junio](https://drive.google.com/file/d/1yT5ezvLpjubKEzH3zR9rGPJEyiqqHNLY/view?usp=sharing)
