@@ -146,14 +146,11 @@ Para poder considerar completada la semana 4 del entrenamiento debe contemplar l
 | Uso de nombres significativos en variables y funciones                             | 10          |
 | Uso de funciones/métodos limpios en clases                                         | 10          |
 | Uso correcto de los Principios de Diseño SOLID                                     | 20          |
-| Uso correcto de arquitectura hexagonal en un Proyecto de Spring Boot               | 20          |
-| Quizz Arquitectura Orientada a Eventos                                             | 10          |
-| Quizz Microservicios vs Monolito Modular                                           | 10          |
-| Uso de desarrollo Orientado a Pruebas                                              | 10          |
-| Uso de desarrollo Orientado a Comportamiento (Cucumber)                            | 10          |
+| Uso correcto de arquitectura hexagonal/n-capas en un Proyecto de Spring Boot       | 20          |
+| Participación Arquitectura Orientada a Eventos                                     | 10          |
+| Participación Microservicios vs Monolito Modular                                   | 10          |
+| Uso de Desarrollo Orientado a Pruebas                                              | 10          |
+| Uso de Desarrollo Orientado a Comportamiento (Cucumber)                            | 10          |
 | **Total**                                                                          | **100**     |
 | **Mínimo aprobatorio**                                                             | **80**     |
 
-#### Ejercicio 1
-Aceptar el siguiente assignment en github classroom:
-- [Clean Code Java Sr](https://classroom.github.com/a/jMcwpuVF)
