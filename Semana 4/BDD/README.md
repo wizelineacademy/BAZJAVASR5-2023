@@ -12,7 +12,7 @@
 - [Postman](https://www.postman.com/downloads/)
 
 # :pencil: Actividad
-> Relizar el ejercicio [Software Architecture](../Practicas/software-architeture-exercise)
+> Relizar el ejercicio [Software Architecture](../Ejercicios/software-architeture-exercise)
 
 
 # :books: Recursos

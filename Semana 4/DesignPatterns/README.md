@@ -46,7 +46,7 @@ para resolver problemas comunes cuando diseña aplicaciones de Sotfware.
 - [Postman](https://www.postman.com/downloads/)
 
 # :pencil: Actividad
-> Realizar el ejercicio [Clean Code](../Practicas/software-architeture-exercise)
+> Realizar el ejercicio [Clean Code](../Ejercicios/software-architeture-exercise)
 
 # :books: Recursos
 - [Refactoring Guru -> Design Patterns](https://refactoring.guru/design-patterns)

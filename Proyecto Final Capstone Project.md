@@ -154,10 +154,3 @@ Para poder considerar completada la semana 4 del entrenamiento debe contemplar l
 | **Total**                                                                          | **100**     |
 | **Mínimo aprobatorio**                                                             | **80**     |
 
-#### Ejercicio Clean Code
-Aceptar el siguiente assignment en github classroom:
-- [Clean Code Java Sr](https://classroom.github.com/a/jMcwpuVF)
-
-#### Ejercicio Software Architecture
-Aceptar el siguiente assignment en github classroom:
-- [Software Architecture Java Sr](https://classroom.github.com/a/jAG7bL8c)

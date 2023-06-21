@@ -19,7 +19,7 @@
 - [Postman](https://www.postman.com/downloads/)
 
 # :pencil: Actividad
-> Relizar el ejercicio [Software Architecture](../Practicas/software-architeture-exercise)
+> Relizar el ejercicio [Software Architecture](../Ejercicios/software-architeture-exercise)
 
 # :books: Recursos
 - [Agile Software Development PNIE](https://dl.ebooksworld.ir/motoman/Pearson.Agile.Software.Development.Principles.Patterns.and.Practices.www.EBooksWorld.ir.pdf)

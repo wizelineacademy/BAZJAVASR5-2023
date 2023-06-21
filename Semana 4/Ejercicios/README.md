@@ -4,6 +4,8 @@ Este bloque se evalua con dos ejercicios.
 ## Ejercicio Clean Code
 El primero [Conecta 4](./clean-code-exercise) enfocado a resolver 
 un problema muy simple siguiendo las prácticas de código limpio.
+Algo importante en este ejercicio es que se utilice el principio
+de trabajo de "_Desarrollo Basado en Pruebas (TDD)_".
 
 Aceptar el siguiente assignment en github classroom:
 - [Clean Code Java Sr](https://classroom.github.com/a/jMcwpuVF)
