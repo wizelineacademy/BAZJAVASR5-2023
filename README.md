@@ -74,7 +74,12 @@ Los temas estan divididos en 4 semanas, 3 sesiones por semana.
    9. [Cobertura de pruebas](Semana%203/Cobertura/README.md)
   
 ### Semana 4 - Good Code
-   1. [Good Code](Semana%204/Good%20Code/README.md)
+   1. [Clean Code](Semana%204/CleanCode/README.md)
+   2. [SOLID Principles](Semana%204/SOLIDPrinciples/README.md)
+   3. [Design Patterns](Semana%204/DesignPatterns/README.md)
+   4. [Software Architecture](Semana%204/SoftwareArchitecture/README.md)
+   5. [BDD](Semana%204/BDD/README.md)
+   6. [Ejercicios](Semana%204/Ejercicios/README.md)
    
 
 # IV. Grabaciones Sesiones y Presentaciones 📺
