@@ -17,7 +17,7 @@
 
 El proyecto está conformado de ejercicios y tareas que se van realizando en las sesiones impartidas a lo largo del curso. Cada semana se deberá realizar un entregable que deberá ser completado el lunes siguiente a la semana que corresponde.
 
-Se deberá enviar cada entrega en las fechas indicadas en la siguiente sección y para poder tener una `revisión` y `retroalimentación` se deberá realizar dicha entrega a través del siguiente [formulario](https://forms.gle/Unzg9VPPaJguX7rL8), lo que nos indicará que está listo tu entregable para revisión.
+Se deberá enviar cada entrega en las fechas indicadas en la siguiente sección y para poder tener `revisión` y `retroalimentación` se deberá realizar dicha entrega a través del siguiente [formulario](https://forms.gle/Unzg9VPPaJguX7rL8), lo que nos indicará que está listo tu entregable para revisión.
 
 # Entregables
 
